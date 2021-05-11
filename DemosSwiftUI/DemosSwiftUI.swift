@@ -28,7 +28,7 @@ struct DemosSwiftUI: App {
 //                        Image(systemName: "cloud.sun")
 //                    }
 //            }
-            WeatherDetailsView()
+            TestMap(viewModel: ViewModel())
         }
     }
 }
@@ -44,11 +44,11 @@ class ViewModel: ObservableObject {
         for i in 0...50 {
             let latitude = initialLatitude + Double.random(in: -0.2...0.2)
             let longitude = initialLongitude + Double.random(in: -0.2...0.2)
-            store.append(.init(id: i, name: "", latitude: latitude, longitude: longitude))
+            store.append(.init(name: "", latitude: latitude, longitude: longitude))
         }
     }
     
-    func fetchImage(for placeIndex: Int) {
+    func fetchImage(for placeIndex: UUID) {
         print("lol")
         URLSession.shared.dataTaskPublisher(for: URL(string: "https://picsum.photos/200/300")!)
             .map { result -> Data? in
@@ -64,7 +64,8 @@ class ViewModel: ObservableObject {
                     return
                 }
                 DispatchQueue.main.async {
-                    self?.store[placeIndex].image = Image(uiImage: UIImage(data: data)!)
+                    let index = self?.store.firstIndex(where: {$0.id == placeIndex})
+                    self?.store[index!].image = Image(uiImage: UIImage(data: data)!)
                 }
             }
             .store(in: &cancellables)
@@ -73,10 +74,10 @@ class ViewModel: ObservableObject {
 
 
 struct VeganFoodPlace: Identifiable {
-    var id: Int
+    var id = UUID()
     let name: String
-    let latitude: Double
-    let longitude: Double
+    var latitude: Double
+    var longitude: Double
     var image: Image? = nil
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)

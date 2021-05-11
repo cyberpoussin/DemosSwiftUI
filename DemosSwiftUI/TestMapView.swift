@@ -18,34 +18,37 @@ struct TestMap: View {
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
         self._coordinateRegion = State(initialValue: MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: viewModel.initialLatitude, longitude: viewModel.initialLongitude),
-            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)))
+                                        center: CLLocationCoordinate2D(latitude: viewModel.initialLatitude, longitude: viewModel.initialLongitude),
+                                        span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)))
+        MKMapView.appearance().mapType = .satellite
     }
     
     var body: some View {
         Map(coordinateRegion: $coordinateRegion,
             annotationItems: viewModel.store) { place in
-            
+            //ImageAnnotation(isBig: placeSelected?.id == place.id ? true : false, image: place, imageSelected: $placeSelected).annotation
             MapAnnotation(coordinate: place.coordinate) {
-                Button {
-                    if placeSelected?.id == place.id {
-                        placeSelected = nil
-                    } else {
-                        placeSelected = place
-                    }
-                } label: {
+
                     if place.image != nil {
-                        place.image!
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(height: 60)
-                            .clipShape(Circle())
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.blue, lineWidth: 0.2)
-                            )
-                    }
-                    else {
+                            place.image!
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(height: 160)
+                                .clipShape(Circle())
+                                .overlay(
+                                    Circle()
+                                        .stroke(Color.blue, lineWidth: 0.2)
+                                        )
+                                .onTapGesture {
+                                    if placeSelected?.id  == place.id {
+                                        placeSelected = nil
+                                    } else {
+                                        placeSelected = place
+                                    }
+                                }
+                                .scaleEffect(placeSelected?.id == place.id ? 1 : 0.4)
+                                .animation(.linear, value: placeSelected?.id)
+                    } else {
                         Image(systemName: "drop.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
@@ -53,24 +56,66 @@ struct TestMap: View {
                                 print("apparait")
                                 viewModel.fetchImage(for: place.id)
                             }
-                    } 
-                }
-                .foregroundColor(.red)
+                    }
+                
+                
+
+
             }
+
         }
         
-        .sheet(item: $placeSelected) {place in
-            VStack {
-                if let image = place.image {
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 250)
-                }
-                Text(place.name)
-            }
-        }
+//        .sheet(item: $placeSelected) {place in
+//            VStack {
+//                if let image = place.image {
+//                    image
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fit)
+//                        .frame(width: 250)
+//                }
+//                Text(place.name)
+//            }
+//        }
         .edgesIgnoringSafeArea(.all)
+    }
+}
+
+struct ImageAnnotation {
+    var isBig: Bool
+    var image: VeganFoodPlace
+    @Binding var imageSelected: VeganFoodPlace?
+    var annotation: some MapAnnotationProtocol {
+        MapAnnotation(coordinate: image.coordinate) {
+//            HStack {
+//                if !isBig {
+//                Image(systemName: "drop.fill")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .frame(width: 100)
+//                    .onTapGesture {
+//                        imageSelected = image
+//                    }
+//                } else {
+//                    Image(systemName: "drop.fill")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fit)
+//                        .frame(width: 100)
+//                        .onTapGesture {
+//                            imageSelected = image
+//                        }
+//                }
+//            }
+            Image(systemName: "drop.fill")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100)
+                .onTapGesture {
+                    imageSelected = image
+                }
+            .scaleEffect(isBig ? 1 : 0.2)
+            .animation(.linear, value: isBig)
+            
+        }
     }
 }
 
