@@ -18,7 +18,7 @@
 		842AF3DE25D5DB46008BC371 /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3DD25D5DB46008BC371 /* Color+extension.swift */; };
 		842AF3E125D5DB69008BC371 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3E025D5DB69008BC371 /* Palette.swift */; };
 		842AF3E525D5DB87008BC371 /* PaletteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3E425D5DB87008BC371 /* PaletteService.swift */; };
-		842AF3E825D5DC74008BC371 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3E725D5DC74008BC371 /* APIService.swift */; };
+		842AF3E825D5DC74008BC371 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3E725D5DC74008BC371 /* APIManager.swift */; };
 		842AF3EB25D5E28B008BC371 /* PalettDotEsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3EA25D5E28B008BC371 /* PalettDotEsService.swift */; };
 		8439FE9F25CA9210007ED4CF /* DemosSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439FE9E25CA9210007ED4CF /* DemosSwiftUI.swift */; };
 		8439FEA125CA9210007ED4CF /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439FEA025CA9210007ED4CF /* MusicPlayerView.swift */; };
@@ -30,6 +30,8 @@
 		845036CC260390FE00B866C3 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845036CB260390FE00B866C3 /* WeatherResponse.swift */; };
 		845036D12603959700B866C3 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845036D02603959700B866C3 /* Shared.swift */; };
 		845036DD260396DF00B866C3 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845036DC260396DF00B866C3 /* PagerView.swift */; };
+		8493BF2F264ADE1100CF131C /* TestPolyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8493BF2E264ADE1100CF131C /* TestPolyMap.swift */; };
+		8493BF31264ADE2600CF131C /* Wizards in Resources */ = {isa = PBXBuildFile; fileRef = 8493BF30264ADE2600CF131C /* Wizards */; };
 		84EEDD5625CEB2EA0051732A /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84EEDD5525CEB2EA0051732A /* ApiKeys.plist */; };
 		84EEDD5B25CEEFEB0051732A /* WeatherMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEDD5A25CEEFEB0051732A /* WeatherMapView.swift */; };
 		84EEDD5E25CEF3FC0051732A /* WeatherListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEDD5D25CEF3FC0051732A /* WeatherListResponse.swift */; };
@@ -47,7 +49,7 @@
 		842AF3DD25D5DB46008BC371 /* Color+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
 		842AF3E025D5DB69008BC371 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		842AF3E425D5DB87008BC371 /* PaletteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteService.swift; sourceTree = "<group>"; };
-		842AF3E725D5DC74008BC371 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		842AF3E725D5DC74008BC371 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		842AF3EA25D5E28B008BC371 /* PalettDotEsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalettDotEsService.swift; sourceTree = "<group>"; };
 		8439FE9B25CA9210007ED4CF /* DemosSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemosSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8439FE9E25CA9210007ED4CF /* DemosSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosSwiftUI.swift; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		845036CB260390FE00B866C3 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		845036D02603959700B866C3 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		845036DC260396DF00B866C3 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+		8493BF2E264ADE1100CF131C /* TestPolyMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPolyMap.swift; sourceTree = "<group>"; };
+		8493BF30264ADE2600CF131C /* Wizards */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Wizards; sourceTree = "<group>"; };
 		84EEDD5525CEB2EA0051732A /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		84EEDD5A25CEEFEB0051732A /* WeatherMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMapView.swift; sourceTree = "<group>"; };
 		84EEDD5D25CEF3FC0051732A /* WeatherListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListResponse.swift; sourceTree = "<group>"; };
@@ -100,7 +104,7 @@
 			children = (
 				842AF3D825D318CC008BC371 /* TestColorPalette.swift */,
 				8414C7BE25D9214400D130D2 /* CrazyPaletteView.swift */,
-				842AF3E725D5DC74008BC371 /* APIService.swift */,
+				842AF3E725D5DC74008BC371 /* APIManager.swift */,
 				842AF3E025D5DB69008BC371 /* Palette.swift */,
 				840BD8E326023D7D00C27C68 /* Services */,
 				840BD8DE26023D4B00C27C68 /* Helpers */,
@@ -130,6 +134,8 @@
 				8439FE9E25CA9210007ED4CF /* DemosSwiftUI.swift */,
 				843ACB2F25CD8FBE0004E440 /* TestLazyGrid.swift */,
 				843ACB3225CDF1E60004E440 /* TestMapView.swift */,
+				8493BF2E264ADE1100CF131C /* TestPolyMap.swift */,
+				8493BF30264ADE2600CF131C /* Wizards */,
 				842AF3DB25D5DB29008BC371 /* CrazyPalette */,
 				845036E02603970600B866C3 /* AirQualityMapSwiftUI */,
 				845036D9260396C700B866C3 /* PagerSwiftUI */,
@@ -251,6 +257,7 @@
 				84EEDD5625CEB2EA0051732A /* ApiKeys.plist in Resources */,
 				8439FEA625CA9210007ED4CF /* Preview Assets.xcassets in Resources */,
 				8439FEA325CA9210007ED4CF /* Assets.xcassets in Resources */,
+				8493BF31264ADE2600CF131C /* Wizards in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +273,7 @@
 				842AF3DE25D5DB46008BC371 /* Color+extension.swift in Sources */,
 				842AF3D325D2B858008BC371 /* AQListResponse.swift in Sources */,
 				84EEDD5B25CEEFEB0051732A /* WeatherMapView.swift in Sources */,
-				842AF3E825D5DC74008BC371 /* APIService.swift in Sources */,
+				842AF3E825D5DC74008BC371 /* APIManager.swift in Sources */,
 				845036DD260396DF00B866C3 /* PagerView.swift in Sources */,
 				842AF3D025D2B776008BC371 /* TestAirQualityMapView.swift in Sources */,
 				84007E5B25D1A708005F1F4A /* TestPagerView.swift in Sources */,
@@ -284,6 +291,7 @@
 				842AF3E125D5DB69008BC371 /* Palette.swift in Sources */,
 				842AF3EB25D5E28B008BC371 /* PalettDotEsService.swift in Sources */,
 				8439FE9F25CA9210007ED4CF /* DemosSwiftUI.swift in Sources */,
+				8493BF2F264ADE1100CF131C /* TestPolyMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

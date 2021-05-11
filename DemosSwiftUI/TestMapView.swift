@@ -39,6 +39,7 @@ struct TestMap: View {
                                     Circle()
                                         .stroke(Color.blue, lineWidth: 0.2)
                                         )
+                                .scaleEffect(placeSelected?.id == place.id ? 1 : 0.4)
                                 .onTapGesture {
                                     if placeSelected?.id  == place.id {
                                         placeSelected = nil
@@ -46,7 +47,7 @@ struct TestMap: View {
                                         placeSelected = place
                                     }
                                 }
-                                .scaleEffect(placeSelected?.id == place.id ? 1 : 0.4)
+                                
                                 .animation(.linear, value: placeSelected?.id)
                     } else {
                         Image(systemName: "drop.fill")

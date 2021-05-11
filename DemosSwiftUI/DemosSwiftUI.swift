@@ -12,6 +12,25 @@ import Combine
 @main
 struct DemosSwiftUI: App {
     @StateObject private var viewModel = ViewModel()
+    
+    init() {
+        
+        
+        
+        /*
+        let appearance = UINavigationBarAppearance()
+        appearance.shadowColor = .clear
+        appearance.backgroundColor = .red
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
+        UITabBar.appearance().backgroundColor = .white
+        UITabBar.appearance().shadowImage = UIImage()
+        //UITabBar.appearance().backgroundImage = UIImage()
+        */
+        
+        
+    }
     var body: some Scene {
         WindowGroup {
 //            TabView {
@@ -41,7 +60,7 @@ class ViewModel: ObservableObject {
     
     init() {
         store = []
-        for i in 0...50 {
+        for _ in 0...50 {
             let latitude = initialLatitude + Double.random(in: -0.2...0.2)
             let longitude = initialLongitude + Double.random(in: -0.2...0.2)
             store.append(.init(name: "", latitude: latitude, longitude: longitude))
