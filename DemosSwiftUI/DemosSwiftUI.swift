@@ -47,7 +47,15 @@ struct DemosSwiftUI: App {
 //                        Image(systemName: "cloud.sun")
 //                    }
 //            }
-            TestMap(viewModel: ViewModel())
+   //         TestMap(viewModel: ViewModel())
+            NavigationView {
+                if #available(iOS 15.0, *) {
+                    FooBarView()
+                } else {
+                    Text("iOS14")
+                    // Fallback on earlier versions
+                }
+            }
         }
     }
 }

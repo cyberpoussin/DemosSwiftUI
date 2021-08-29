@@ -10,7 +10,9 @@
 		84007E5825D170FB005F1F4A /* WeatherDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84007E5725D170FB005F1F4A /* WeatherDetailsView.swift */; };
 		84007E5B25D1A708005F1F4A /* TestPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84007E5A25D1A708005F1F4A /* TestPagerView.swift */; };
 		840BD8E126023D6200C27C68 /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840BD8E026023D6200C27C68 /* AnyEncodable.swift */; };
+		8414C04726CE77F300BD7E8C /* SwiftUIView9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C04626CE77F300BD7E8C /* SwiftUIView9.swift */; };
 		8414C7BF25D9214400D130D2 /* CrazyPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C7BE25D9214400D130D2 /* CrazyPaletteView.swift */; };
+		84297C6F26D0326400498DA6 /* TextFieldWithDebounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84297C6E26D0326300498DA6 /* TextFieldWithDebounce.swift */; };
 		842AF3D025D2B776008BC371 /* TestAirQualityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3CF25D2B776008BC371 /* TestAirQualityMapView.swift */; };
 		842AF3D325D2B858008BC371 /* AQListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3D225D2B858008BC371 /* AQListResponse.swift */; };
 		842AF3D625D2B8F5008BC371 /* AQResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3D525D2B8F5008BC371 /* AQResponse.swift */; };
@@ -20,6 +22,7 @@
 		842AF3E525D5DB87008BC371 /* PaletteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3E425D5DB87008BC371 /* PaletteService.swift */; };
 		842AF3E825D5DC74008BC371 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3E725D5DC74008BC371 /* APIManager.swift */; };
 		842AF3EB25D5E28B008BC371 /* PalettDotEsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AF3EA25D5E28B008BC371 /* PalettDotEsService.swift */; };
+		84367C1426C54535002815AB /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84367C1326C54535002815AB /* SwiftUIView.swift */; };
 		8439FE9F25CA9210007ED4CF /* DemosSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439FE9E25CA9210007ED4CF /* DemosSwiftUI.swift */; };
 		8439FEA125CA9210007ED4CF /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439FEA025CA9210007ED4CF /* MusicPlayerView.swift */; };
 		8439FEA325CA9210007ED4CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8439FEA225CA9210007ED4CF /* Assets.xcassets */; };
@@ -27,21 +30,40 @@
 		843ACB2A25CC233F0004E440 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843ACB2925CC233F0004E440 /* AudioPlayer.swift */; };
 		843ACB3025CD8FBE0004E440 /* TestLazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843ACB2F25CD8FBE0004E440 /* TestLazyGrid.swift */; };
 		843ACB3325CDF1E60004E440 /* TestMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843ACB3225CDF1E60004E440 /* TestMapView.swift */; };
+		84457FF526D1227800E5A8B9 /* SwiftUIView12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84457FF426D1227800E5A8B9 /* SwiftUIView12.swift */; };
+		844C4AD926DA2D7F00276242 /* SwiftUIView21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C4AD826DA2D7F00276242 /* SwiftUIView21.swift */; };
 		845036CC260390FE00B866C3 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845036CB260390FE00B866C3 /* WeatherResponse.swift */; };
 		845036D12603959700B866C3 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845036D02603959700B866C3 /* Shared.swift */; };
 		845036DD260396DF00B866C3 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845036DC260396DF00B866C3 /* PagerView.swift */; };
+		8462EEEA26DA884D00CA157E /* DragGesture_with_GestureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462EEE926DA884C00CA157E /* DragGesture_with_GestureState.swift */; };
+		8462EEEC26DADF0900CA157E /* SongList+AVPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462EEEB26DADF0900CA157E /* SongList+AVPlayerManager.swift */; };
+		8462EEEE26DBD63F00CA157E /* BrokenAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8462EEED26DBD63F00CA157E /* BrokenAnimations.swift */; };
+		8489B97D26D7B5290060CCE6 /* UIScrollViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489B97C26D7B5290060CCE6 /* UIScrollViewWrapper.swift */; };
 		8493BF2F264ADE1100CF131C /* TestPolyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8493BF2E264ADE1100CF131C /* TestPolyMap.swift */; };
 		8493BF31264ADE2600CF131C /* Wizards in Resources */ = {isa = PBXBuildFile; fileRef = 8493BF30264ADE2600CF131C /* Wizards */; };
+		84A3D8D426C9D14F007F63B9 /* SwiftUIView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8D326C9D14F007F63B9 /* SwiftUIView2.swift */; };
+		84A3D8D626CB07E5007F63B9 /* SwiftUIView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8D526CB07E5007F63B9 /* SwiftUIView3.swift */; };
+		84A3D8D826CBFACD007F63B9 /* SwiftUIView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8D726CBFACD007F63B9 /* SwiftUIView4.swift */; };
+		84A3D8DA26CC49BF007F63B9 /* SwiftUIView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8D926CC49BE007F63B9 /* SwiftUIView5.swift */; };
+		84A3D8DC26CD4AF9007F63B9 /* SwiftUIView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8DB26CD4AF9007F63B9 /* SwiftUIView6.swift */; };
+		84A3D8DE26CD71AF007F63B9 /* SwiftUIView7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8DD26CD71AF007F63B9 /* SwiftUIView7.swift */; };
+		84A3D8E026CD7227007F63B9 /* SwiftUIView8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8DF26CD7227007F63B9 /* SwiftUIView8.swift */; };
+		84A878E626D4548B00BD7551 /* FetchAPI_with_Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A878E526D4548B00BD7551 /* FetchAPI_with_Concurrency.swift */; };
+		84A878EA26D63DB500BD7551 /* SwiftUIView17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A878E926D63DB400BD7551 /* SwiftUIView17.swift */; };
+		84A878EE26D6922A00BD7551 /* SwiftUIView18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A878ED26D6922A00BD7551 /* SwiftUIView18.swift */; };
 		84EEDD5625CEB2EA0051732A /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84EEDD5525CEB2EA0051732A /* ApiKeys.plist */; };
 		84EEDD5B25CEEFEB0051732A /* WeatherMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEDD5A25CEEFEB0051732A /* WeatherMapView.swift */; };
 		84EEDD5E25CEF3FC0051732A /* WeatherListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEDD5D25CEF3FC0051732A /* WeatherListResponse.swift */; };
+		84F537DD26D153A20014FEF5 /* SwiftUIView13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F537DC26D153A20014FEF5 /* SwiftUIView13.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84007E5725D170FB005F1F4A /* WeatherDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsView.swift; sourceTree = "<group>"; };
 		84007E5A25D1A708005F1F4A /* TestPagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPagerView.swift; sourceTree = "<group>"; };
 		840BD8E026023D6200C27C68 /* AnyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		8414C04626CE77F300BD7E8C /* SwiftUIView9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView9.swift; sourceTree = "<group>"; };
 		8414C7BE25D9214400D130D2 /* CrazyPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyPaletteView.swift; sourceTree = "<group>"; };
+		84297C6E26D0326300498DA6 /* TextFieldWithDebounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithDebounce.swift; sourceTree = "<group>"; };
 		842AF3CF25D2B776008BC371 /* TestAirQualityMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAirQualityMapView.swift; sourceTree = "<group>"; };
 		842AF3D225D2B858008BC371 /* AQListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQListResponse.swift; sourceTree = "<group>"; };
 		842AF3D525D2B8F5008BC371 /* AQResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQResponse.swift; sourceTree = "<group>"; };
@@ -51,6 +73,7 @@
 		842AF3E425D5DB87008BC371 /* PaletteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteService.swift; sourceTree = "<group>"; };
 		842AF3E725D5DC74008BC371 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		842AF3EA25D5E28B008BC371 /* PalettDotEsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalettDotEsService.swift; sourceTree = "<group>"; };
+		84367C1326C54535002815AB /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		8439FE9B25CA9210007ED4CF /* DemosSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemosSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8439FE9E25CA9210007ED4CF /* DemosSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosSwiftUI.swift; sourceTree = "<group>"; };
 		8439FEA025CA9210007ED4CF /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
@@ -60,14 +83,31 @@
 		843ACB2925CC233F0004E440 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		843ACB2F25CD8FBE0004E440 /* TestLazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLazyGrid.swift; sourceTree = "<group>"; };
 		843ACB3225CDF1E60004E440 /* TestMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMapView.swift; sourceTree = "<group>"; };
+		84457FF426D1227800E5A8B9 /* SwiftUIView12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView12.swift; sourceTree = "<group>"; };
+		844C4AD826DA2D7F00276242 /* SwiftUIView21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView21.swift; sourceTree = "<group>"; };
 		845036CB260390FE00B866C3 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		845036D02603959700B866C3 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		845036DC260396DF00B866C3 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+		8462EEE926DA884C00CA157E /* DragGesture_with_GestureState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture_with_GestureState.swift; sourceTree = "<group>"; };
+		8462EEEB26DADF0900CA157E /* SongList+AVPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SongList+AVPlayerManager.swift"; sourceTree = "<group>"; };
+		8462EEED26DBD63F00CA157E /* BrokenAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenAnimations.swift; sourceTree = "<group>"; };
+		8489B97C26D7B5290060CCE6 /* UIScrollViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewWrapper.swift; sourceTree = "<group>"; };
 		8493BF2E264ADE1100CF131C /* TestPolyMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPolyMap.swift; sourceTree = "<group>"; };
 		8493BF30264ADE2600CF131C /* Wizards */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Wizards; sourceTree = "<group>"; };
+		84A3D8D326C9D14F007F63B9 /* SwiftUIView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2.swift; sourceTree = "<group>"; };
+		84A3D8D526CB07E5007F63B9 /* SwiftUIView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView3.swift; sourceTree = "<group>"; };
+		84A3D8D726CBFACD007F63B9 /* SwiftUIView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView4.swift; sourceTree = "<group>"; };
+		84A3D8D926CC49BE007F63B9 /* SwiftUIView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView5.swift; sourceTree = "<group>"; };
+		84A3D8DB26CD4AF9007F63B9 /* SwiftUIView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView6.swift; sourceTree = "<group>"; };
+		84A3D8DD26CD71AF007F63B9 /* SwiftUIView7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView7.swift; sourceTree = "<group>"; };
+		84A3D8DF26CD7227007F63B9 /* SwiftUIView8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView8.swift; sourceTree = "<group>"; };
+		84A878E526D4548B00BD7551 /* FetchAPI_with_Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAPI_with_Concurrency.swift; sourceTree = "<group>"; };
+		84A878E926D63DB400BD7551 /* SwiftUIView17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView17.swift; sourceTree = "<group>"; };
+		84A878ED26D6922A00BD7551 /* SwiftUIView18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView18.swift; sourceTree = "<group>"; };
 		84EEDD5525CEB2EA0051732A /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		84EEDD5A25CEEFEB0051732A /* WeatherMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMapView.swift; sourceTree = "<group>"; };
 		84EEDD5D25CEF3FC0051732A /* WeatherListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListResponse.swift; sourceTree = "<group>"; };
+		84F537DC26D153A20014FEF5 /* SwiftUIView13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView13.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +155,11 @@
 		8439FE9225CA9210007ED4CF = {
 			isa = PBXGroup;
 			children = (
+				8462EEEB26DADF0900CA157E /* SongList+AVPlayerManager.swift */,
+				8462EEE926DA884C00CA157E /* DragGesture_with_GestureState.swift */,
+				8489B97C26D7B5290060CCE6 /* UIScrollViewWrapper.swift */,
+				8462EEED26DBD63F00CA157E /* BrokenAnimations.swift */,
+				84A878E526D4548B00BD7551 /* FetchAPI_with_Concurrency.swift */,
 				8439FE9D25CA9210007ED4CF /* DemosSwiftUI */,
 				8439FE9C25CA9210007ED4CF /* Products */,
 			);
@@ -132,8 +177,23 @@
 			isa = PBXGroup;
 			children = (
 				8439FE9E25CA9210007ED4CF /* DemosSwiftUI.swift */,
+				84297C6E26D0326300498DA6 /* TextFieldWithDebounce.swift */,
+				84F537DC26D153A20014FEF5 /* SwiftUIView13.swift */,
+				84457FF426D1227800E5A8B9 /* SwiftUIView12.swift */,
 				843ACB2F25CD8FBE0004E440 /* TestLazyGrid.swift */,
 				843ACB3225CDF1E60004E440 /* TestMapView.swift */,
+				84367C1326C54535002815AB /* SwiftUIView.swift */,
+				84A3D8D526CB07E5007F63B9 /* SwiftUIView3.swift */,
+				84A878E926D63DB400BD7551 /* SwiftUIView17.swift */,
+				84A878ED26D6922A00BD7551 /* SwiftUIView18.swift */,
+				844C4AD826DA2D7F00276242 /* SwiftUIView21.swift */,
+				84A3D8DD26CD71AF007F63B9 /* SwiftUIView7.swift */,
+				84A3D8DF26CD7227007F63B9 /* SwiftUIView8.swift */,
+				8414C04626CE77F300BD7E8C /* SwiftUIView9.swift */,
+				84A3D8D326C9D14F007F63B9 /* SwiftUIView2.swift */,
+				84A3D8D726CBFACD007F63B9 /* SwiftUIView4.swift */,
+				84A3D8D926CC49BE007F63B9 /* SwiftUIView5.swift */,
+				84A3D8DB26CD4AF9007F63B9 /* SwiftUIView6.swift */,
 				8493BF2E264ADE1100CF131C /* TestPolyMap.swift */,
 				8493BF30264ADE2600CF131C /* Wizards */,
 				842AF3DB25D5DB29008BC371 /* CrazyPalette */,
@@ -271,25 +331,45 @@
 				845036D12603959700B866C3 /* Shared.swift in Sources */,
 				843ACB3325CDF1E60004E440 /* TestMapView.swift in Sources */,
 				842AF3DE25D5DB46008BC371 /* Color+extension.swift in Sources */,
+				8489B97D26D7B5290060CCE6 /* UIScrollViewWrapper.swift in Sources */,
 				842AF3D325D2B858008BC371 /* AQListResponse.swift in Sources */,
 				84EEDD5B25CEEFEB0051732A /* WeatherMapView.swift in Sources */,
+				84A878EE26D6922A00BD7551 /* SwiftUIView18.swift in Sources */,
+				84A878E626D4548B00BD7551 /* FetchAPI_with_Concurrency.swift in Sources */,
+				8462EEEC26DADF0900CA157E /* SongList+AVPlayerManager.swift in Sources */,
+				8414C04726CE77F300BD7E8C /* SwiftUIView9.swift in Sources */,
 				842AF3E825D5DC74008BC371 /* APIManager.swift in Sources */,
 				845036DD260396DF00B866C3 /* PagerView.swift in Sources */,
+				84A3D8D826CBFACD007F63B9 /* SwiftUIView4.swift in Sources */,
 				842AF3D025D2B776008BC371 /* TestAirQualityMapView.swift in Sources */,
+				84A3D8D626CB07E5007F63B9 /* SwiftUIView3.swift in Sources */,
 				84007E5B25D1A708005F1F4A /* TestPagerView.swift in Sources */,
+				8462EEEA26DA884D00CA157E /* DragGesture_with_GestureState.swift in Sources */,
+				84A3D8E026CD7227007F63B9 /* SwiftUIView8.swift in Sources */,
 				845036CC260390FE00B866C3 /* WeatherResponse.swift in Sources */,
 				84EEDD5E25CEF3FC0051732A /* WeatherListResponse.swift in Sources */,
+				84457FF526D1227800E5A8B9 /* SwiftUIView12.swift in Sources */,
 				843ACB3025CD8FBE0004E440 /* TestLazyGrid.swift in Sources */,
 				840BD8E126023D6200C27C68 /* AnyEncodable.swift in Sources */,
+				84F537DD26D153A20014FEF5 /* SwiftUIView13.swift in Sources */,
 				842AF3D925D318CC008BC371 /* TestColorPalette.swift in Sources */,
 				8414C7BF25D9214400D130D2 /* CrazyPaletteView.swift in Sources */,
+				84297C6F26D0326400498DA6 /* TextFieldWithDebounce.swift in Sources */,
+				84A3D8DC26CD4AF9007F63B9 /* SwiftUIView6.swift in Sources */,
 				8439FEA125CA9210007ED4CF /* MusicPlayerView.swift in Sources */,
 				842AF3E525D5DB87008BC371 /* PaletteService.swift in Sources */,
+				84A3D8D426C9D14F007F63B9 /* SwiftUIView2.swift in Sources */,
 				842AF3D625D2B8F5008BC371 /* AQResponse.swift in Sources */,
+				8462EEEE26DBD63F00CA157E /* BrokenAnimations.swift in Sources */,
 				84007E5825D170FB005F1F4A /* WeatherDetailsView.swift in Sources */,
+				84367C1426C54535002815AB /* SwiftUIView.swift in Sources */,
 				843ACB2A25CC233F0004E440 /* AudioPlayer.swift in Sources */,
+				84A3D8DA26CC49BF007F63B9 /* SwiftUIView5.swift in Sources */,
 				842AF3E125D5DB69008BC371 /* Palette.swift in Sources */,
+				84A878EA26D63DB500BD7551 /* SwiftUIView17.swift in Sources */,
+				84A3D8DE26CD71AF007F63B9 /* SwiftUIView7.swift in Sources */,
 				842AF3EB25D5E28B008BC371 /* PalettDotEsService.swift in Sources */,
+				844C4AD926DA2D7F00276242 /* SwiftUIView21.swift in Sources */,
 				8439FE9F25CA9210007ED4CF /* DemosSwiftUI.swift in Sources */,
 				8493BF2F264ADE1100CF131C /* TestPolyMap.swift in Sources */,
 			);
