@@ -94,7 +94,7 @@ class CustomHostingController<Content: View>: UIHostingController<Content> {
                     .large(),
                 ]
                 //
-                presentationController.smallestUndimmedDetentIdentifier = nil
+                presentationController.largestUndimmedDetentIdentifier = nil
                 //
                 presentationController.prefersGrabberVisible = true
                 presentationController.prefersScrollingExpandsWhenScrolledToEdge = false
@@ -120,14 +120,14 @@ struct CustomSheet_UI<Content: View>: UIViewControllerRepresentable {
     let content: Content
     @Binding var isPresented: Bool
     let detents: [UISheetPresentationController.Detent]
-    let smallestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier?
+    let largestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier?
     let prefersScrollingExpandsWhenScrolledToEdge: Bool
     let prefersEdgeAttachedInCompactHeight: Bool
 
-    init(isPresented: Binding<Bool>, detents: [UISheetPresentationController.Detent] = [.medium(), .large()], smallestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier? = .medium, prefersScrollingExpandsWhenScrolledToEdge: Bool = false, prefersEdgeAttachedInCompactHeight: Bool = true, @ViewBuilder content: @escaping () -> Content) {
+    init(isPresented: Binding<Bool>, detents: [UISheetPresentationController.Detent] = [.medium(), .large()], largestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier? = .medium, prefersScrollingExpandsWhenScrolledToEdge: Bool = false, prefersEdgeAttachedInCompactHeight: Bool = true, @ViewBuilder content: @escaping () -> Content) {
         self.content = content()
         self.detents = detents
-        self.smallestUndimmedDetentIdentifier = smallestUndimmedDetentIdentifier
+        self.largestUndimmedDetentIdentifier = largestUndimmedDetentIdentifier
         self.prefersEdgeAttachedInCompactHeight = prefersEdgeAttachedInCompactHeight
         self.prefersScrollingExpandsWhenScrolledToEdge = prefersScrollingExpandsWhenScrolledToEdge
         _isPresented = isPresented
@@ -138,7 +138,7 @@ struct CustomSheet_UI<Content: View>: UIViewControllerRepresentable {
     }
 
     func makeUIViewController(context: Context) -> CustomSheetViewController<Content> {
-        let vc = CustomSheetViewController(coordinator: context.coordinator, detents: detents, smallestUndimmedDetentIdentifier: smallestUndimmedDetentIdentifier, prefersScrollingExpandsWhenScrolledToEdge: prefersScrollingExpandsWhenScrolledToEdge, prefersEdgeAttachedInCompactHeight: prefersEdgeAttachedInCompactHeight, content: { content })
+        let vc = CustomSheetViewController(coordinator: context.coordinator, detents: detents, largestUndimmedDetentIdentifier: largestUndimmedDetentIdentifier, prefersScrollingExpandsWhenScrolledToEdge: prefersScrollingExpandsWhenScrolledToEdge, prefersEdgeAttachedInCompactHeight: prefersEdgeAttachedInCompactHeight, content: { content })
         return vc
     }
 
@@ -171,15 +171,15 @@ class CustomSheetViewController<Content: View>: UIViewController {
     let content: Content
     let coordinator: CustomSheet_UI<Content>.Coordinator
     let detents: [UISheetPresentationController.Detent]
-    let smallestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier?
+    let largestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier?
     let prefersScrollingExpandsWhenScrolledToEdge: Bool
     let prefersEdgeAttachedInCompactHeight: Bool
 
-    init(coordinator: CustomSheet_UI<Content>.Coordinator, detents: [UISheetPresentationController.Detent] = [.medium(), .large()], smallestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier? = .medium, prefersScrollingExpandsWhenScrolledToEdge: Bool = false, prefersEdgeAttachedInCompactHeight: Bool = true, @ViewBuilder content: @escaping () -> Content) {
+    init(coordinator: CustomSheet_UI<Content>.Coordinator, detents: [UISheetPresentationController.Detent] = [.medium(), .large()], largestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identifier? = .medium, prefersScrollingExpandsWhenScrolledToEdge: Bool = false, prefersEdgeAttachedInCompactHeight: Bool = true, @ViewBuilder content: @escaping () -> Content) {
         self.content = content()
         self.coordinator = coordinator
         self.detents = detents
-        self.smallestUndimmedDetentIdentifier = smallestUndimmedDetentIdentifier
+        self.largestUndimmedDetentIdentifier = largestUndimmedDetentIdentifier
         self.prefersEdgeAttachedInCompactHeight = prefersEdgeAttachedInCompactHeight
         self.prefersScrollingExpandsWhenScrolledToEdge = prefersScrollingExpandsWhenScrolledToEdge
         super.init(nibName: nil, bundle: .main)
@@ -202,8 +202,8 @@ class CustomSheetViewController<Content: View>: UIViewController {
             hostPopover.sourceView = super.view
             let sheet = hostPopover.adaptiveSheetPresentationController
             sheet.detents = detents
-            sheet.smallestUndimmedDetentIdentifier =
-                smallestUndimmedDetentIdentifier
+            sheet.largestUndimmedDetentIdentifier =
+                largestUndimmedDetentIdentifier
             sheet.prefersScrollingExpandsWhenScrolledToEdge =
                 prefersScrollingExpandsWhenScrolledToEdge
             sheet.prefersEdgeAttachedInCompactHeight =

@@ -48,9 +48,20 @@
 		84A3D8D626CB07E5007F63B9 /* CustomChevronInList+CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8D526CB07E5007F63B9 /* CustomChevronInList+CustomBackButton.swift */; };
 		84A3D8DC26CD4AF9007F63B9 /* Publishers+keyboardHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8DB26CD4AF9007F63B9 /* Publishers+keyboardHeight.swift */; };
 		84A3D8E026CD7227007F63B9 /* View+getSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3D8DF26CD7227007F63B9 /* View+getSize.swift */; };
+		84A3F45726DC3E1A00DE1070 /* SheetParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F45626DC3E1A00DE1070 /* SheetParameters.swift */; };
+		84A3F45926DC3E4300DE1070 /* AnimatorScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F45826DC3E4300DE1070 /* AnimatorScroll.swift */; };
+		84A3F45B26DC3E6000DE1070 /* RecordAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F45A26DC3E6000DE1070 /* RecordAnimation.swift */; };
+		84A3F45D26DC3E7300DE1070 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F45C26DC3E7300DE1070 /* VisualEffectView.swift */; };
+		84A3F45F26DC3E9900DE1070 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F45E26DC3E9900DE1070 /* View+cornerRadius.swift */; };
+		84A3F46126DC3EDA00DE1070 /* UIApplication+endEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3F46026DC3EDA00DE1070 /* UIApplication+endEditing.swift */; };
 		84A878E626D4548B00BD7551 /* FetchAPI_with_Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A878E526D4548B00BD7551 /* FetchAPI_with_Concurrency.swift */; };
 		84A878EA26D63DB500BD7551 /* ListWithPolyDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A878E926D63DB400BD7551 /* ListWithPolyDestinations.swift */; };
 		84A878EE26D6922A00BD7551 /* SubscribeToChangesInChildViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A878ED26D6922A00BD7551 /* SubscribeToChangesInChildViewModels.swift */; };
+		84D8D79426DC2E4700EAC271 /* ScrollableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8D79326DC2E4700EAC271 /* ScrollableView.swift */; };
+		84D8D79626DC2E5000EAC271 /* PositionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8D79526DC2E5000EAC271 /* PositionController.swift */; };
+		84D8D79826DC2E6000EAC271 /* TestScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8D79726DC2E6000EAC271 /* TestScrollView.swift */; };
+		84D8D79A26DC2E8E00EAC271 /* TestScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8D79926DC2E8E00EAC271 /* TestScroll.swift */; };
+		84D8D79C26DC2EB500EAC271 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D8D79B26DC2EB500EAC271 /* DeviceManager.swift */; };
 		84EEDD5625CEB2EA0051732A /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84EEDD5525CEB2EA0051732A /* ApiKeys.plist */; };
 		84EEDD5B25CEEFEB0051732A /* WeatherMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEDD5A25CEEFEB0051732A /* WeatherMapView.swift */; };
 		84EEDD5E25CEF3FC0051732A /* WeatherListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EEDD5D25CEF3FC0051732A /* WeatherListResponse.swift */; };
@@ -101,9 +112,20 @@
 		84A3D8D526CB07E5007F63B9 /* CustomChevronInList+CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomChevronInList+CustomBackButton.swift"; sourceTree = "<group>"; };
 		84A3D8DB26CD4AF9007F63B9 /* Publishers+keyboardHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publishers+keyboardHeight.swift"; sourceTree = "<group>"; };
 		84A3D8DF26CD7227007F63B9 /* View+getSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+getSize.swift"; sourceTree = "<group>"; };
+		84A3F45626DC3E1A00DE1070 /* SheetParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetParameters.swift; sourceTree = "<group>"; };
+		84A3F45826DC3E4300DE1070 /* AnimatorScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorScroll.swift; sourceTree = "<group>"; };
+		84A3F45A26DC3E6000DE1070 /* RecordAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAnimation.swift; sourceTree = "<group>"; };
+		84A3F45C26DC3E7300DE1070 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		84A3F45E26DC3E9900DE1070 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
+		84A3F46026DC3EDA00DE1070 /* UIApplication+endEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+endEditing.swift"; sourceTree = "<group>"; };
 		84A878E526D4548B00BD7551 /* FetchAPI_with_Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAPI_with_Concurrency.swift; sourceTree = "<group>"; };
 		84A878E926D63DB400BD7551 /* ListWithPolyDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithPolyDestinations.swift; sourceTree = "<group>"; };
 		84A878ED26D6922A00BD7551 /* SubscribeToChangesInChildViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeToChangesInChildViewModels.swift; sourceTree = "<group>"; };
+		84D8D79326DC2E4700EAC271 /* ScrollableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableView.swift; sourceTree = "<group>"; };
+		84D8D79526DC2E5000EAC271 /* PositionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionController.swift; sourceTree = "<group>"; };
+		84D8D79726DC2E6000EAC271 /* TestScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollView.swift; sourceTree = "<group>"; };
+		84D8D79926DC2E8E00EAC271 /* TestScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScroll.swift; sourceTree = "<group>"; };
+		84D8D79B26DC2EB500EAC271 /* DeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
 		84EEDD5525CEB2EA0051732A /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		84EEDD5A25CEEFEB0051732A /* WeatherMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMapView.swift; sourceTree = "<group>"; };
 		84EEDD5D25CEF3FC0051732A /* WeatherListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListResponse.swift; sourceTree = "<group>"; };
@@ -276,6 +298,7 @@
 				8462EEF126DBE8E200CA157E /* View+backButton.swift */,
 				84A3D8DB26CD4AF9007F63B9 /* Publishers+keyboardHeight.swift */,
 				8414C04626CE77F300BD7E8C /* ListWithIndex.swift */,
+				84A3F45526DC3DFB00DE1070 /* New Group */,
 				84A3D8DF26CD7227007F63B9 /* View+getSize.swift */,
 			);
 			path = Components;
@@ -287,6 +310,24 @@
 				8462EEF326DBEA1A00CA157E /* String+random.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		84A3F45526DC3DFB00DE1070 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				84D8D79326DC2E4700EAC271 /* ScrollableView.swift */,
+				84A3F45826DC3E4300DE1070 /* AnimatorScroll.swift */,
+				84D8D79B26DC2EB500EAC271 /* DeviceManager.swift */,
+				84A3F45626DC3E1A00DE1070 /* SheetParameters.swift */,
+				84D8D79926DC2E8E00EAC271 /* TestScroll.swift */,
+				84A3F46026DC3EDA00DE1070 /* UIApplication+endEditing.swift */,
+				84A3F45E26DC3E9900DE1070 /* View+cornerRadius.swift */,
+				84A3F45C26DC3E7300DE1070 /* VisualEffectView.swift */,
+				84A3F45A26DC3E6000DE1070 /* RecordAnimation.swift */,
+				84D8D79726DC2E6000EAC271 /* TestScrollView.swift */,
+				84D8D79526DC2E5000EAC271 /* PositionController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,16 +401,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D8D79C26DC2EB500EAC271 /* DeviceManager.swift in Sources */,
 				845036D12603959700B866C3 /* Shared.swift in Sources */,
 				8462EEF026DBE51100CA157E /* ProgramaticAndClassicNavigation.swift in Sources */,
 				843ACB3325CDF1E60004E440 /* TestMapView.swift in Sources */,
 				842AF3DE25D5DB46008BC371 /* Color+extension.swift in Sources */,
 				8489B97D26D7B5290060CCE6 /* UIScrollViewWrapper.swift in Sources */,
 				842AF3D325D2B858008BC371 /* AQListResponse.swift in Sources */,
+				84A3F45D26DC3E7300DE1070 /* VisualEffectView.swift in Sources */,
+				84A3F45B26DC3E6000DE1070 /* RecordAnimation.swift in Sources */,
 				84EEDD5B25CEEFEB0051732A /* WeatherMapView.swift in Sources */,
 				84A878EE26D6922A00BD7551 /* SubscribeToChangesInChildViewModels.swift in Sources */,
+				84A3F46126DC3EDA00DE1070 /* UIApplication+endEditing.swift in Sources */,
 				84A878E626D4548B00BD7551 /* FetchAPI_with_Concurrency.swift in Sources */,
 				8462EEEC26DADF0900CA157E /* SongList+AVPlayerManager.swift in Sources */,
+				84D8D79A26DC2E8E00EAC271 /* TestScroll.swift in Sources */,
+				84D8D79426DC2E4700EAC271 /* ScrollableView.swift in Sources */,
 				8414C04726CE77F300BD7E8C /* ListWithIndex.swift in Sources */,
 				842AF3E825D5DC74008BC371 /* APIManager.swift in Sources */,
 				845036DD260396DF00B866C3 /* PagerView.swift in Sources */,
@@ -378,6 +425,7 @@
 				84A3D8D626CB07E5007F63B9 /* CustomChevronInList+CustomBackButton.swift in Sources */,
 				84007E5B25D1A708005F1F4A /* TestPagerView.swift in Sources */,
 				8462EEF226DBE8E200CA157E /* View+backButton.swift in Sources */,
+				84D8D79826DC2E6000EAC271 /* TestScrollView.swift in Sources */,
 				8462EEEA26DA884D00CA157E /* DragGesture_with_GestureState.swift in Sources */,
 				84A3D8E026CD7227007F63B9 /* View+getSize.swift in Sources */,
 				845036CC260390FE00B866C3 /* WeatherResponse.swift in Sources */,
@@ -385,11 +433,13 @@
 				84457FF526D1227800E5A8B9 /* ScrollViewThatFits.swift in Sources */,
 				843ACB3025CD8FBE0004E440 /* TestLazyGrid.swift in Sources */,
 				840BD8E126023D6200C27C68 /* AnyEncodable.swift in Sources */,
+				84D8D79626DC2E5000EAC271 /* PositionController.swift in Sources */,
 				84F537DD26D153A20014FEF5 /* HalfSheet_with_UISheetPresentationController.swift in Sources */,
 				842AF3D925D318CC008BC371 /* TestColorPalette.swift in Sources */,
 				8414C7BF25D9214400D130D2 /* CrazyPaletteView.swift in Sources */,
 				84297C6F26D0326400498DA6 /* TextFieldWithDebounce.swift in Sources */,
 				84A3D8DC26CD4AF9007F63B9 /* Publishers+keyboardHeight.swift in Sources */,
+				84A3F45F26DC3E9900DE1070 /* View+cornerRadius.swift in Sources */,
 				8439FEA125CA9210007ED4CF /* MusicPlayerView.swift in Sources */,
 				842AF3E525D5DB87008BC371 /* PaletteService.swift in Sources */,
 				84A3D8D426C9D14F007F63B9 /* Map_with_regionThatFitsToCoordinates+getZoomLevel.swift in Sources */,
@@ -404,6 +454,8 @@
 				844C4AD926DA2D7F00276242 /* SubscribeToChangesInChildViewModelsVersion2.swift in Sources */,
 				8439FE9F25CA9210007ED4CF /* DemosSwiftUI.swift in Sources */,
 				8493BF2F264ADE1100CF131C /* TestPolyMap.swift in Sources */,
+				84A3F45926DC3E4300DE1070 /* AnimatorScroll.swift in Sources */,
+				84A3F45726DC3E1A00DE1070 /* SheetParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
