@@ -16,7 +16,7 @@ struct TestScroll<Content: View, Content2: View>: View {
     @State private var offsetInsideScrollView: CGPoint = CGPoint(x: 0, y: 0)
     @State private var showMore: Bool = false
     @State private var yDuringAnim: CGFloat = 0
-    @ObservedObject var positionController: PositionController = PositionController()
+    @StateObject var positionController: PositionController = PositionController()
     var sheetWidth: CGFloat { positionController.sheetParameters.sheetWidth }
     var title: () -> Content2
     var content: () -> Content
@@ -42,10 +42,10 @@ struct TestScroll<Content: View, Content2: View>: View {
                         VStack(alignment: .center, spacing: 0) {
                             HStack(alignment: .top) {
                                 self.title()
+                                    .opacity(offsetInsideScrollView.y < 0 ? 1 : 0)
                             }
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 17)
-                            .opacity(0.01)
                             self.content()
                                 .frame(width: positionController.sheetWidth)
                                 .frame(maxWidth: .infinity)
@@ -84,10 +84,11 @@ struct TestScroll<Content: View, Content2: View>: View {
                         Rectangle()
                             .frame(width: 50, height: 7)
                             .cornerRadius(5)
-                            .padding(.top, 0)
                             .foregroundColor(Color.gray.opacity(0.5))
                         HStack(alignment: .top) {
                             self.title()
+                                .padding(.top, 2)
+                                .opacity(offsetInsideScrollView.y < 0 ? 0 : 1)
                         }
                     }
                     .padding(.bottom, 17)
@@ -153,18 +154,17 @@ struct TestTestScrollView: View {
             
         }, content: {
             VStack {
-//                Button("toggle") {
-//                    toggle.toggle()
-//                }
-//                if toggle {
-//                    Text(texte)
-//                } else {
-//                    Text(texte3)
-//                        .frame(maxHeight: .infinity)
-//
-//                }
-                Text(texte3)
-                    .frame(maxHeight: .infinity)
+                Button("toggle") {
+                    toggle.toggle()
+                }
+                if toggle {
+                    Text(texte)
+                } else {
+                    Text(texte3)
+                        .frame(maxHeight: .infinity)
+                }
+                //Text(texte3)
+                  //  .frame(maxHeight: .infinity)
                     
             }
             .lineLimit(nil)

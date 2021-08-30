@@ -207,6 +207,11 @@ final class UIScrollViewController<Content: View>: UIViewController, UIScrollVie
         if scrollView.subviews.isEmpty {
             scrollView.addSubview(hostingController.view)
             hostingController.view.frame.size = contentSize
+        } else {
+            scrollView.subviews[0].removeFromSuperview()
+            scrollView.addSubview(hostingController.view)
+            hostingController.view.frame.size = contentSize
+
         }
         // Par contre on adapte la taille du contenant
         scrollView.contentSize = contentSize
