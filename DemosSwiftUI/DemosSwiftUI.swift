@@ -48,14 +48,15 @@ struct DemosSwiftUI: App {
 //                    }
 //            }
    //         TestMap(viewModel: ViewModel())
-            NavigationView {
-                if #available(iOS 15.0, *) {
-                    FooBarView()
-                } else {
-                    Text("iOS14")
-                    // Fallback on earlier versions
-                }
-            }
+//            NavigationView {
+//                if #available(iOS 15.0, *) {
+//                    FooBarView()
+//                } else {
+//                    Text("iOS14")
+//                    // Fallback on earlier versions
+//                }
+//            }
+            CustomScrollView()
         }
     }
 }

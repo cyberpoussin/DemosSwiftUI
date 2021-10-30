@@ -6,15 +6,15 @@
 //
 
 import SwiftUI
-
+import Combine
 
 struct CustomScrollView: View {
-    @State private var offset: CGPoint = CGPoint(x: 0, y: 200)
+    @StateObject private var vm = UIScrollViewWrapperViewModel()
     let texts: [String] = (1 ... 100).map { _ in String.random(length: Int.random(in: 6 ... 20)) }
     var body: some View {
         ZStack(alignment: .top) {
-            GeometryReader { geo in
-                UIScrollViewWrapper(offset: $offset) { //
+           // GeometryReader { geo in
+                UIScrollViewWrapper(vm: vm) { //
                     VStack {
                         Text("Start")
                             .foregroundColor(.red)
@@ -24,14 +24,14 @@ struct CustomScrollView: View {
                     }
                     .padding(.top, 40)
 
-                    .frame(width: geo.size.width)
+                    //.frame(width: geo.size.width)
                 }
                 .navigationBarTitle("Test")
-            }
+           // }
             HStack {
-                Text(offset.debugDescription)
+                Text(vm.offset.debugDescription)
                 Button("add") {
-                    offset.y += 100
+                    vm.offset.y += 100
                 }
             }
             .padding(.bottom, 10)
@@ -73,13 +73,19 @@ class UIScrollViewViewController: UIViewController {
     }
 }
 
-struct UIScrollViewWrapper<Content: View>: UIViewControllerRepresentable {
+class UIScrollViewWrapperViewModel: ObservableObject {
+    @Published var offset: CGPoint = .zero
+    var shouldUpdate = true
+}
+
+struct UIScrollViewWrapper<Content:View>: UIViewControllerRepresentable {
+    
+    
+    
+    @ObservedObject var vm: UIScrollViewWrapperViewModel
     var content: () -> Content
-    @Binding var offset: CGPoint
-    init(offset: Binding<CGPoint>, @ViewBuilder content: @escaping () -> Content) {
-        self.content = content
-        _offset = offset
-    }
+
+
 
     func makeCoordinator() -> Controller {
         return Controller(parent: self)
@@ -90,14 +96,19 @@ struct UIScrollViewWrapper<Content: View>: UIViewControllerRepresentable {
         vc.scrollView.contentInsetAdjustmentBehavior = .never
         vc.hostingController.rootView = AnyView(content())
         vc.view.layoutIfNeeded()
-        vc.scrollView.contentOffset = offset
+        vc.scrollView.contentOffset = vm.offset
         vc.scrollView.delegate = context.coordinator
         return vc
     }
 
     func updateUIViewController(_ viewController: UIScrollViewViewController, context: Context) {
+        guard vm.shouldUpdate else {
+            vm.shouldUpdate = true
+            return
+        }
+        print("update scroll")
         viewController.hostingController.rootView = AnyView(content())
-        viewController.scrollView.contentOffset = offset
+        viewController.scrollView.contentOffset = vm.offset
     }
 
     class Controller: NSObject, UIScrollViewDelegate {
@@ -107,7 +118,8 @@ struct UIScrollViewWrapper<Content: View>: UIViewControllerRepresentable {
         }
 
         func scrollViewDidScroll(_ scrollView: UIScrollView) {
-            parent.offset = scrollView.contentOffset
+            parent.vm.shouldUpdate = false
+            parent.vm.offset = scrollView.contentOffset
         }
     }
 }
