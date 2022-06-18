@@ -1,10 +1,3 @@
-//
-//  SwiftUIView8.swift
-//  DemosSwiftUI
-//
-//  Created by Admin on 18/08/2021.
-//
-
 import SwiftUI
 
 
